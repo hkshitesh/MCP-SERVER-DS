@@ -6,6 +6,7 @@ is for MCP server that interacts with mock leave database and responds to MCP cl
 1. Install Claude Desktop
 2. You can use docker container for Ubuntu Linux
 3. Commands are given below
+
       IMAGE_NAME="ke5haav/claude-desktop-builder:latest"
       DEB_FILE="claude-desktop_0.12.55_amd64.deb"      
       docker pull $IMAGE_NAME && \
@@ -26,6 +27,7 @@ is for MCP server that interacts with mock leave database and responds to MCP cl
 13. In Claude desktop, now you will see tools from this server
 
 @All rights reserved. Codebasics Inc. LearnerX Pvt Ltd. 
+
 
 
 
