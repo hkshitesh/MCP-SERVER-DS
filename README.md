@@ -16,15 +16,16 @@ is for MCP server that interacts with mock leave database and responds to MCP cl
    
 5. Commands are given below
 
-      IMAGE_NAME="ke5haav/claude-desktop-builder:latest"
-      DEB_FILE="claude-desktop_0.12.55_amd64.deb"      
-      docker pull $IMAGE_NAME && \
-      docker create --name claude-temp-ds $IMAGE_NAME && \
-      docker cp claude-temp:/home/appuser/claude-desktop-debian/$DEB_FILE . && \
-      sudo dpkg -i $DEB_FILE && \
-      sudo apt-get -f install -y && \
-      rm $DEB_FILE && \
-      echo "Done. Run: claude-desktop"
+         IMAGE_NAME="ke5haav/claude-desktop-builder:latest"
+         DEB_FILE="claude-desktop_0.12.55_amd64.deb"      
+         docker pull $IMAGE_NAME && \
+         docker create --name claude-temp-ds $IMAGE_NAME && \
+         docker cp claude-temp:/home/appuser/claude-desktop-debian/$DEB_FILE . && \
+         sudo dpkg -i $DEB_FILE && \
+         sudo apt-get -f install -y && \
+         rm $DEB_FILE && \
+         echo "Done. Run: claude-desktop"
+
 6. install mcp using `pip install mcp`
 7. Install uv by running `pip install uv`
 8. Run `uv init my-first-mcp-server` to create a project directory
@@ -36,6 +37,7 @@ is for MCP server that interacts with mock leave database and responds to MCP cl
 14. In Claude desktop, now you will see tools from this server
 
 @All rights reserved. Codebasics Inc. LearnerX Pvt Ltd. 
+
 
 
 
