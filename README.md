@@ -11,7 +11,7 @@ is for MCP server that interacts with mock leave database and responds to MCP cl
        rm -rf ~/.config/claude*
        rm -rf ~/.local/share/claude*
        rm -rf ~/.cache/claude*
-       docker rm -f claude-temp-ds
+       docker rm -f $(docker ps -aq)
 
    
 5. Commands are given below
@@ -36,6 +36,7 @@ is for MCP server that interacts with mock leave database and responds to MCP cl
 14. In Claude desktop, now you will see tools from this server
 
 @All rights reserved. Codebasics Inc. LearnerX Pvt Ltd. 
+
 
 
 
